@@ -83,7 +83,9 @@
 		localStorage.setItem('editId',$(elm).attr('data-id'));
 		$.ajax({
 			url : '/getWishById',
-			data : {id:$(elm).attr('data-id')},
+			data : {
+			    id:$(elm).attr('data-id')
+            },
 			type : 'POST',
 			success: function(res){
 				
